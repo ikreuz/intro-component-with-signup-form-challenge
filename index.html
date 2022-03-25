@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+
+<body class="backdrop">
+    <main class="container portal container__size">
+        <section class="layout-header">
+            <h2 class="layout-header__title">
+                Learn to code by watching others
+            </h2>
+            <p class="layout-header__paragraph">
+                See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+                but understanding how developers think is invaluable.
+            </p>
+        </section>
+        <section class="layout-content">
+            <article class="layout-content__btn">
+                <button class="layout-content__btn-try" id="try-free-si" data-a-target="try-free-button">
+                    Try it free 7 days <span> then $20/mo. thereafter </span>
+                </button>
+            </article>
+            <article class="layout-content__form">
+                <form class="layout-login" onsubmit="event.preventDefault();">
+
+                    <div class="layout-firstname-input">
+                        <input type="text" name="login-firstname-input" id="firstname-si"
+                            data-a-target="login-firstname-input" placeholder="First Name">
+                        <span id="firstname-error-si" for="login-firstname-input" aria-hidden="true"
+                            class="state-error-hidden">First Name
+                            cannto be
+                            empty</span>
+                    </div>
+
+                    <div class="layout-lastname-input">
+                        <input type="text" name="login-lastname-input" id="lastname-si"
+                            data-a-target="login-lastname-input" placeholder="Last Name">
+                        <span id="lastname-error-si" for="login-lastname-input" aria-hidden="true"
+                            class="state-error-hidden">Last Name
+                            cannot be empty</span>
+                    </div>
+
+                    <div class="layout-login-email-input">
+                        <input type="email" name="login-email-input" id="email-si" data-a-target="login-email-input"
+                            placeholder="Email Address">
+                        <span id="email-error-si" for="login-email-input" aria-hidden="true"
+                            class="state-error-hidden">Looks like this is
+                            not an
+                            email</span>
+                    </div>
+
+                    <div class="layout-login-password-input">
+                        <input type="password" name="login-password-input" id="password-si"
+                            data-a-target="login-passowrd-input" placeholder="Password">
+                        <span id="password-error-si" for="login-password-input" aria-hidden="true"
+                            class="state-error-hidden">Password
+                            cannot
+                            be empty</span>
+                    </div>
+
+                    <button class="layout-login__btn" id="submit-si" data-a-target="password-login-button">
+                        <div class="button-label-text">
+                            Claim your free trial
+                        </div>
+                    </button>
+
+                    <div class="layout-login__terms">
+                        By clicking the button, you are agreeing to our <a class="layout-login__link"> Terms and
+                            Services </a>
+                    </div>
+
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/ikreuz/">Victor Cruz</a>.
+        </p>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
